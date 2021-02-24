@@ -1,0 +1,54 @@
+import java.util.*;  
+import java.io.*;  
+public class Test {  
+public static void main(String[] args)throws Exception{  
+    FileReader reader=new FileReader("db.properties");  
+      
+    Properties p=new Properties();  
+    p.load(reader);  
+      
+    System.out.println(p.getProperty("user"));  
+    System.out.println(p.getProperty("password"));  
+}  
+}  
+import java.sql.Connection;
+import java.sql.Date;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+
+import com.app.modelBean.Employee;
+
+
+
+System.out.println("Service method is called");
+		 String str1=request.getParameter("uname");
+		 String str2=request.getParameter("pwd");
+		 PrintWriter out=response.getWriter();
+		 if(str1.equals("Anil") && str2.equals("setty"))
+		 {
+			 out.println("Login Success");
+		 }
+		 else
+		 {
+			 out.println("Login failed");
+		 }
+		 out.close();
+	}
+	
+	
+	
+	
+	
+	<web-app>
+<servlet>
+        <servlet-name>ex</servlet-name>
+        <servlet-class>Example1</servlet-class>
+</servlet>
+<servlet-mapping>
+       <servlet-name>ex</servlet-name>
+       <url-pattern>/examp</url-pattern>
+</servlet-mapping>
+</web-app>

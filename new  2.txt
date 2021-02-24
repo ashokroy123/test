@@ -1,0 +1,74 @@
+<input name="firstname" type="text">
+
+<input name="lastname" type="text">
+
+<select name="cars">
+  <option value="volvo">Volvo</option>
+  <option value="saab">Saab</option>
+  <option value="fiat">Fiat</option>
+  <option value="audi">Audi</option>
+</select>
+
+
+<textarea name="message" rows="10" cols="30">
+The cat was playing in the garden.
+</textarea>
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<form>
+ <fieldset>
+  <legend>Personalia:</legend>
+  Name: <input type="text"><br>
+  Email: <input type="text"><br>
+  Date of birth: <input type="text">
+ </fieldset>
+</form>
+
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<form action="/action_page.php" method="get">
+  <input type="radio" name="gender" id="male" value="male"> Male<br>
+  <input type="radio" name="gender" id="female" value="female" checked="checked"> Female<br>
+  <input type="radio" name="gender" id="other" value="other"> Other<br><br>
+  <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
+
+<html>
+<head>
+ <form>
+  <label for="email">Email: </label>
+  <input type="email" id="email" name="email"/>
+ <form>
+</body>
+</html>
+
+
+
+
+
+<fieldset>
+            <legend>Educational Qualifications:</legend>
+              Present Address:
+                <textarea name="present address" rows="5" cols="20">
+                </textarea><br>
+                <input type="radio" name="address" id="same as perminant address"               value="same as perminant address">same as perminant address<br>
+              Perminant Address:
+                <textarea name="perminant address" rows="5" cols="20">
+                </textarea>
+         </fieldset>
+		 
+		 
+		 

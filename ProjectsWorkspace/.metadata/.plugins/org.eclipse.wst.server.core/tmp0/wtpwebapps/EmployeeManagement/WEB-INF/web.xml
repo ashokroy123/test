@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>EmployeeManagement</display-name>
+  <welcome-file-list>
+    <welcome-file>/jsps/EmployeeLogin.jsp</welcome-file>
+  </welcome-file-list>
+  
+  
+  <servlet>
+    <servlet-name>AllEmployees</servlet-name>
+    <jsp-file>/jsps/AllEmployeeDetails.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AllEmployees</servlet-name>
+    <url-pattern>/allEmp</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <servlet-name>EmployeeRegister</servlet-name>
+    <jsp-file>/jsps/EmployeeRegisterForm.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>EmployeeRegister</servlet-name>
+    <url-pattern>/empReg</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <description></description>
+    <display-name>RegFormServlet</display-name>
+    <servlet-name>RegFormServlet</servlet-name>
+    <servlet-class>com.app.controller.RegFormServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RegFormServlet</servlet-name>
+    <url-pattern>/RegFormSubmit</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <servlet-name>EmployeeLogin</servlet-name>
+    <jsp-file>/jsps/EmployeeLogin.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>EmployeeLogin</servlet-name>
+    <url-pattern>/empLogin</url-pattern>
+  </servlet-mapping>  
+  
+  
+  <servlet>
+    <servlet-name>EmployeeHome</servlet-name>
+    <jsp-file>/jsps/EmployeeHomePage.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>EmployeeHome</servlet-name>
+    <url-pattern>/empHome`</url-pattern>
+  </servlet-mapping>  
+  
+  
+  <servlet>
+    <description></description>
+    <display-name>LoginServlet</display-name>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>com.app.controller.LoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/LoginServlet</url-pattern>
+  </servlet-mapping>
+  
+
+  <servlet>
+    <description></description>
+    <display-name>EmpDetailsServlet</display-name>
+    <servlet-name>EmpDetailsServlet</servlet-name>
+    <servlet-class>com.app.controller.EmpDetailsServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>EmpDetailsServlet</servlet-name>
+    <url-pattern>/EmpDetailsServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <description></description>
+    <display-name>DeleteServlet</display-name>
+    <servlet-name>DeleteServlet</servlet-name>
+    <servlet-class>com.app.controller.DeleteServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeleteServlet</servlet-name>
+    <url-pattern>/DeleteServlet</url-pattern>
+  </servlet-mapping>
+</web-app>

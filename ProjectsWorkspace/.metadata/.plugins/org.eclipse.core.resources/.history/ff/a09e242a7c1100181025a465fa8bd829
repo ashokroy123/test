@@ -1,0 +1,66 @@
+package com.app.controller;
+
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Enumeration;
+import java.util.List;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.app.modelBean.EmployeeAddress;
+import com.app.modelBean.EmployeeQualifications;
+import com.app.modelBean.EmployeeReg;
+
+import dao.EmployeeDao;
+import dao.EmployeeDaoImpl;
+public class RegFormServlet extends HttpServlet {
+	public void doPost(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
+		System.out.println("in servlet");
+		Enumeration e = req.getParameterNames();
+		while (e.hasMoreElements()) {
+			String str = (String) e.nextElement();
+			System.out.println(str+"::"+req.getParameter(str));
+		}
+		EmployeeDao dao = new EmployeeDaoImpl();
+		EmployeeReg emp=new EmployeeReg();
+		emp.setEmpId(new Integer(req.getParameter("employeeid")));
+		emp.setFirstName(req.getParameter("firstname"));
+		emp.setLastName(req.getParameter("lastname"));
+		emp.setDateOfJoin(req.getParameter("dateofjoin"));
+		emp.setSalary(new Double(req.getParameter("salary")));
+		emp.setExperience(req.getParameter("experiance"));
+		
+		
+		emp.setMobileNumber(req.getParameter("mobilenumber"));
+		emp.setEmailId(req.getParameter("email"));
+		emp.setStatus(req.getParameter("status"));
+		
+		EmployeeAddress addr=new EmployeeAddress();
+		int empId = 0;
+		addr.setEmpId(empId);
+		addr.setPresentAddress(req.getParameter(""));
+		addr.setPerminantAddress(req.getParameter(""));
+		emp.setAddress(addr);
+		
+		List<EmployeeQualifications> qualList=new ArrayList<EmployeeQualifications>();
+		
+		
+		EmployeeQualifications qual = new EmployeeQualifications();
+		qual.setQualificationId(1);
+		qual.setQualification(req.getParameter(""));
+		qual.setCollegeName(req.getParameter(""));
+		qual.setPercentage(new Double(req.getParameter("")));
+		qual.setYearOfpassedout(req.getParameter(int));
+		qual.setIsHighest(req.getParameter(true));
+		qualList.add(qual);
+		emp.setQualList(qualList);
+		
+		boolean saved = dao.saveEmployee(emp);
+		System.out.println(saved);
+	
+	}
+
+}

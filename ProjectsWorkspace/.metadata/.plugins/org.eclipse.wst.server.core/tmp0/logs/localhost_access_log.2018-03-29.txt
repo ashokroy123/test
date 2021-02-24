@@ -1,0 +1,11 @@
+127.0.0.1 - - [29/Mar/2018:11:01:27 +0530] "GET / HTTP/1.1" 404 994
+0:0:0:0:0:0:0:1 - - [29/Mar/2018:11:01:29 +0530] "GET /EmployeeManagement/ HTTP/1.1" 200 1039
+0:0:0:0:0:0:0:1 - - [29/Mar/2018:11:01:29 +0530] "GET /EmployeeManagement/images/prab.png HTTP/1.1" 200 8729
+0:0:0:0:0:0:0:1 - - [29/Mar/2018:11:01:29 +0530] "GET /EmployeeManagement/images/logo11.png HTTP/1.1" 200 15817
+0:0:0:0:0:0:0:1 - - [29/Mar/2018:11:02:00 +0530] "POST /EmployeeManagement/LoginServlet HTTP/1.1" 200 1076
+0:0:0:0:0:0:0:1 - - [29/Mar/2018:11:23:56 +0530] "POST /EmployeeManagement/LoginServlet HTTP/1.1" 200 1076
+0:0:0:0:0:0:0:1 - - [29/Mar/2018:11:24:04 +0530] "POST /EmployeeManagement/LoginServlet HTTP/1.1" 200 1075
+0:0:0:0:0:0:0:1 - - [29/Mar/2018:11:24:25 +0530] "POST /EmployeeManagement/LoginServlet HTTP/1.1" 200 742
+0:0:0:0:0:0:0:1 - - [29/Mar/2018:11:24:25 +0530] "GET /EmployeeManagement/images/prab1.JPEG HTTP/1.1" 200 5748
+0:0:0:0:0:0:0:1 - - [29/Mar/2018:11:24:25 +0530] "GET /EmployeeManagement/images/prab1.JPEG HTTP/1.1" 200 -
+0:0:0:0:0:0:0:1 - - [29/Mar/2018:11:24:35 +0530] "GET /EmployeeManagement/empReg HTTP/1.1" 200 7538

@@ -1,0 +1,96 @@
+<html>
+<head>
+<title>Employee Register Form:</title>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+
+<script>
+$(function () {
+       $("#addQual").on('click', function () {
+       	$("#fieldset3").append("<table id='EducationalDeatails' border='1' cellpadding='3%'><tr><th>Qualification</th><th>University/College</th><th>Percentage</th> <th>Comletion Year</th> <th>Highest Qualification</th></tr> </table>"); 
+       })
+});
+</script>
+<h2>Employee Register Form:</h2>
+	  <form>
+       <label> Employee Id:</label>
+        <input type="text" name="employeeid"/> <pre></pre> 
+         <label>First Name: </label>
+        <input type="text" name="firstname"/> <pre></pre>
+         <label>Last Name</label>
+  		 <input type="text" name="lastname"/><pre></pre>
+         <label>Date of Join:</label>
+  		 <input type="text" name="dateofjoin"/><pre></pre> 
+        <label> Drepartment:</label>
+     	   <select id="department">
+  	     <option value="hr">Hr</option>
+  	     <option value="developer">Developer</option>
+  	     <option value="qualitytester">QualityTester</option>
+           </select><pre></pre> 
+           <label>Salary: </label>
+        <input type="text" name="salary"/><pre></pre> 
+        <label>Experience:</label>
+          <select id="experiance">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+          </select><pre></pre> 
+         <fieldset>
+            <legend>Address:</legend>
+            <label> Present Address:</label>
+              
+                <textarea name="present address" rows="5" cols="20">
+                </textarea><br>
+                <input type="radio" name="address" id="same as perminant address" value="same as perminant address">same as perminant address<br>
+                <label>  Perminant Address:</label>
+             
+                <textarea name="perminant address" rows="5" cols="20">
+                </textarea>
+         </fieldset>
+         
+		 
+		 
+		 
+		 
+         <fieldset id="fieldset3" style="padding:20px"><pre></pre> 
+<legend>Educational Deatails:</legend>
+<input type="button" onClick="clear();" value="clear">
+<input id="addQual" type="button" onClick="add();" value="add">
+    <table id="EducationalDeatails" border="1" cellpadding="3%">
+    <tr>
+        <th>Qualification</th>
+        <th>University/College</th>
+        <th>Percentage</th>
+        <th>Comletion Year</th>
+        <th>Highest Qualification</th>
+    </tr>
+    <tr>
+        <td> <select id="qualification">
+            <option value="b.tech">B.Tech</option>
+            <option value="intermediate">Intermediate</option>
+            <option value="ssc">SSC</option>
+          </select></td>
+        <td> </td>
+        <td></td>
+        <td></td>
+        <td>  <input type="radio" name="educationaldetails" id="is highest qualification" value="is highest qualification">is highest qualification</td>
+    </tr>
+</table><pre></pre>
+
+
+</fieldset><pre></pre> 
+ <label>Mobile Number:</label>
+		 <input type="text" name="mobilenumber"/><pre></pre>  
+        <label>Email: </label>
+       <input type="email" id="email" name="email"/><pre></pre> 
+        <label> Status:</label>
+     	   <select name="status">
+  	     <option value="active">Active</option>
+  	     <option value="inactive">Inactive</option>
+        </select>
+        </form>
+         <pre></pre> 
+<input type="button" onClick="save();" value="Save">
+<input type="button" onClick="clear();" value="clear">
+	</body>
+    </html>
