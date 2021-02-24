@@ -1,0 +1,19 @@
+CREATE TABLE USERS(UID BIGINT PRIMARY KEY, CONFIRM_PASSWORD VATCHAR(255), PASSWORD VARCHAR(255), USERNAME VARCHAR(255));
+
+CREATE TABLE OWNED(SNO BIGINT PRIMARY KEY, BREED VARCHAR(255), CID BIGINT, DOB VARCHAR(255), GENDER VARCHAR(255), NAME VARCHAR(255), PID BIGINT);
+
+CREATE TABLE PET(PID BIGINT PRIMARY KEY, BREED VARCHAR(255), CID BIGINT, DOB VARCHAR(255), GENDER VARCHAR(255), NAME VARCHAR(255), PRICE DOUBLE, STATUS VARCHAR(20));
+
+Insert into Users values(?,?,?,?);
+
+Insert into Owned values(?,?,?,?,?,?,?);
+
+Insert into Pet values(?,?,?,?,?,?,?,?);
+
+Select * from Users where username=?;
+
+Select * from pet where name=?;
+
+Select * from pet;
+
+Select * from owned where cid=?;
